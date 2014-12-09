@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<ImageView android:id="@+id/ImageViewCabecera"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:clickable="true" android:background="@android:color/black"
+		android:src="@drawable/cabecera" />
+
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:background="@drawable/black_gradient"
+		android:layout_below="@id/ImageViewCabecera">
+		<LinearLayout android:id="@+id/LinearLayoutRSSItem"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:orientation="vertical">
+			<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/titleTextView" android:layout_width="fill_parent"
+				android:textSize="20sp" android:layout_height="wrap_content"
+				android:textColor="@android:color/background_light" />
+			<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/TextViewFechaAutor" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:textSize="10sp"
+				android:textColor="@android:color/background_light" />
+			<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/contentTextView" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:textSize="13sp"
+				android:autoLink="web" android:textColor="@android:color/background_light" />
+		</LinearLayout>
+	</ScrollView>
+</RelativeLayout>

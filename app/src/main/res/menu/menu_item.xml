@@ -1,0 +1,4 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/item_compartir_item" android:title="@string/menu_compartir" />
+	<item android:id="@+id/item_visitar_articulo" android:title="@string/menu_visitar_articulo" />
+</menu>

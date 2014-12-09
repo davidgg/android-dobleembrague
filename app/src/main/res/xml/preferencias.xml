@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="@string/preferencesTitle">
+		<CheckBoxPreference android:title="@string/preferencesCBTitle"
+			android:defaultValue="true" android:summary="@string/preferencesCBS"
+			android:key="checkboxActualizar" />		
+		<ListPreference android:title="@string/preferencesLPTitle"
+			android:summary="@string/preferencesLPS"
+			android:key="listCategoria" android:defaultValue="0"
+			android:entries="@array/listArrayCategorias" android:entryValues="@array/listValuesCategorias" />
+	</PreferenceCategory>
+	
+	<PreferenceCategory android:title="Widget">	
+		<ListPreference android:title="@string/preferencesWList"
+			android:summary="@string/preferencesWLS"
+			android:key="listCategoriaWidget" android:defaultValue="0"
+			android:entries="@array/listArrayCategorias" android:entryValues="@array/listValuesCategorias" />
+			
+			<ListPreference android:title="@string/preferencesWLA"
+			android:summary="@string/preferencesWLAb"
+			android:key="listFrecuenciaWidget" android:defaultValue="10800000"
+			android:entries="@array/listArrayFrecuencia" android:entryValues="@array/listValuesFrecuencia" />
+	</PreferenceCategory>	
+</PreferenceScreen>

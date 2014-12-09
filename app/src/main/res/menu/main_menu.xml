@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/item_actualizar" android:icon="@drawable/ic_menu_refresh"
+		android:title="@string/menu_actualizar" />
+	<item android:id="@+id/item_visitar" android:icon="@drawable/ic_icon_bn"
+		android:title="@string/dobleembrague">
+		<menu>
+			<item android:id="@+id/item_Web" android:title="@string/menu_web" />
+			<item android:id="@+id/item_Facebook" android:title="@string/menu_facebook" />
+			<item android:id="@+id/item_Twitter" android:title="@string/menu_twitter" />
+			<item android:id="@+id/item_Youtube" android:title="@string/menu_youtube" />
+		</menu>
+	</item>
+	<item android:id="@+id/item_preferencias" android:icon="@android:drawable/ic_menu_preferences"
+		android:title="@string/menu_preferencias" />
+	<item android:id="@+id/item_mas" android:icon="@android:drawable/ic_menu_more"
+		android:title="@string/menu_mas">
+		<menu>
+			<item android:id="@+id/item_sugerencias" android:title="@string/menu_sugerencias" />
+			<item android:id="@+id/item_acerca" android:title="@string/menu_acerca" />
+			<item android:id="@+id/item_salir" android:title="@string/menu_salir" />
+		</menu>
+	</item>
+</menu>

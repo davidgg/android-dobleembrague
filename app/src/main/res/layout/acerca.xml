@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<ImageView android:id="@+id/ImageViewDialogCabecera"
+		android:src="@drawable/cabecera" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+
+	<ScrollView android:id="@+id/ScrollViewDatos"
+		android:layout_width="fill_parent" android:layout_below="@id/ImageViewDialogCabecera"
+		android:layout_height="wrap_content">
+
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="vertical" android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+
+
+			<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/TextViewEncVersion" android:text="@string/TitVersion"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:textSize="15sp" android:layout_gravity="left"
+				android:textColor="@android:color/background_light" />
+
+			<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+				android:text="@string/Version" android:id="@+id/TextViewVersion"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:textSize="13sp" android:layout_gravity="left" />
+
+
+			<!-- Autor -->
+			<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+				android:text="@string/TitAutor" android:id="@+id/TextViewEncAutor"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:textSize="15sp" android:layout_gravity="left"
+				android:textColor="@android:color/background_light" />
+
+			<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+				android:text="@string/Autor" android:id="@+id/TextViewAutor"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:textSize="13sp" android:layout_gravity="left" />
+
+			<!-- Sitio Web -->
+			<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+				android:text="@string/Web" android:id="@+id/TextViewWeb"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:textSize="13sp" android:layout_gravity="left"
+				android:autoLink="web" />
+
+			<!-- Twitter -->
+			<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+				android:text="@string/Twitter" android:id="@+id/TextViewEncTwitter"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:textSize="13sp" android:layout_gravity="left"
+				android:autoLink="web" />
+		</LinearLayout>
+	</ScrollView>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="horizontal" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_marginTop="5dp"
+		android:layout_below="@id/ScrollViewDatos" android:gravity="center_horizontal">
+
+		<Button android:id="@+id/ButtonOK" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="@string/BotonOK" />
+		<Button android:id="@+id/ButtonMoreApps" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="@string/TitMarket" />
+
+	</LinearLayout>
+
+</RelativeLayout>

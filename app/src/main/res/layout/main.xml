@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<ImageView android:id="@+id/ImageViewCabecera"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:clickable="true" android:background="@android:color/black"
+		android:src="@drawable/cabecera" />
+
+	<LinearLayout android:id="@+id/LinearLayoutSecciones"
+		android:layout_height="wrap_content" android:orientation="horizontal"
+		android:layout_width="fill_parent" android:background="@android:color/black"
+		android:gravity="center" android:layout_below="@id/ImageViewCabecera">
+		<LinearLayout android:id="@+id/LinearLayoutSecciones1"
+			android:layout_height="wrap_content" android:orientation="horizontal"
+			android:background="#dbd8d8" android:layout_width="wrap_content">
+			<TextView android:id="@+id/TextViewUltimas"
+				android:layout_height="fill_parent" android:layout_width="wrap_content"
+				android:clickable="true" android:text="@string/ButtonUltimas"
+				android:textColor="@android:color/background_light"
+				android:background="@android:color/black" android:textStyle="bold"
+				android:layout_marginLeft="2dp" android:layout_marginRight="2dp"
+				android:layout_marginTop="2dp" android:layout_marginBottom="2dp"
+				android:textSize="20sp" android:gravity="center" android:onClick="SeleccionSeccion" />
+		</LinearLayout>
+		<LinearLayout android:id="@+id/LinearLayoutSecciones2"
+			android:layout_height="wrap_content" android:orientation="horizontal"
+			android:layout_width="wrap_content" android:background="#dbd8d8"
+			android:layout_marginLeft="50dp">
+			<TextView android:id="@+id/TextViewCategorias"
+				android:layout_height="fill_parent" android:layout_width="wrap_content"
+				android:clickable="true" android:text="@string/ButtonCategorias"
+				android:textColor="@android:color/background_light"
+				android:background="@android:color/black" android:textStyle="bold"
+				android:layout_marginLeft="2dp" android:layout_marginRight="2dp"
+				android:layout_marginTop="2dp" android:layout_marginBottom="2dp"
+				android:textSize="20sp" android:gravity="center" android:onClick="SeleccionSeccion" />
+		</LinearLayout>
+	</LinearLayout>
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:scrollbars="none"
+		android:id="@+id/ScrollViewSecciones" android:visibility="gone"
+		android:background="@drawable/black_gradient_h" android:layout_below="@id/LinearLayoutSecciones">
+
+		<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="wrap_content" android:layout_height="fill_parent"
+			android:scrollbars="none">
+			<LinearLayout android:id="@+id/LinearLayoutCategorias"
+				android:orientation="horizontal" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:paddingTop="2dip"
+				android:paddingBottom="2dip">
+				<TextView android:id="@+id/TextViewCoches"
+					android:layout_height="fill_parent" android:layout_width="wrap_content"
+					android:clickable="true" android:text="@string/CatCoches"
+					android:textStyle="bold" android:layout_marginTop="5dp"
+					android:layout_marginLeft="5dp" android:layout_marginBottom="5dp"
+					android:maxLines="1" android:textSize="25sp" android:textColor="@android:color/white"
+					android:onClick="SeleccionSeccion" />
+
+				<TextView android:id="@+id/TextViewClasicos"
+					android:layout_height="fill_parent" android:layout_width="wrap_content"
+					android:clickable="true" android:text="@string/CatClasicos"
+					android:textStyle="bold" android:layout_marginLeft="15dp"
+					android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+					android:maxLines="1" android:textSize="25sp" android:textColor="@android:color/white"
+					android:onClick="SeleccionSeccion" />
+
+				<TextView android:id="@+id/TextViewCompeticion"
+					android:layout_height="fill_parent" android:layout_width="wrap_content"
+					android:clickable="true" android:text="@string/CatCompeticion"
+					android:textColor="@android:color/white" android:textStyle="bold"
+					android:layout_marginLeft="15dp" android:layout_marginTop="5dp"
+					android:layout_marginBottom="5dp" android:maxLines="1"
+					android:textSize="25sp" android:onClick="SeleccionSeccion" />
+
+				<TextView android:id="@+id/TextViewVideojuegos"
+					android:layout_height="fill_parent" android:layout_width="wrap_content"
+					android:clickable="true" android:text="@string/CatVideojuegos"
+					android:textColor="@android:color/white" android:textStyle="bold"
+					android:layout_marginLeft="15dp" android:layout_marginTop="5dp"
+					android:layout_marginBottom="5dp" android:maxLines="1"
+					android:textSize="25sp" android:onClick="SeleccionSeccion" />
+
+				<TextView android:id="@+id/TextViewMotos"
+					android:layout_height="fill_parent" android:layout_width="wrap_content"
+					android:clickable="true" android:textColor="@android:color/white"
+					android:textStyle="bold" android:text="@string/CatMotos"
+					android:layout_marginLeft="15dp" android:layout_marginTop="5dp"
+					android:layout_marginBottom="5dp" android:maxLines="1"
+					android:textSize="25sp" android:onClick="SeleccionSeccion" />
+
+				<TextView android:id="@+id/TextViewOtros"
+					android:layout_height="fill_parent" android:layout_width="wrap_content"
+					android:clickable="true" android:textColor="@android:color/white"
+					android:textStyle="bold" android:text="@string/CatOtros"
+					android:layout_marginLeft="15dp" android:layout_marginTop="5dp"
+					android:layout_marginBottom="5dp" android:maxLines="1"
+					android:textSize="25sp" android:onClick="SeleccionSeccion" />
+
+				<TextView android:id="@+id/TextViewInformacionTecnica"
+					android:layout_height="fill_parent" android:layout_width="wrap_content"
+					android:clickable="true" android:text="@string/CatInformacionTecnica"
+					android:textColor="@android:color/white" android:textStyle="bold"
+					android:layout_marginLeft="15dp" android:layout_marginTop="5dp"
+					android:layout_marginBottom="5dp" android:maxLines="1"
+					android:textSize="25sp" android:onClick="SeleccionSeccion" />
+			</LinearLayout>
+		</HorizontalScrollView>
+	</ScrollView>
+
+	<LinearLayout android:id="@+id/LinearLayoutRSS"
+		android:background="@android:color/black" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_below="@id/ScrollViewSecciones">
+		<TextView android:id="@+id/TextViewMsg" android:layout_width="wrap_content"
+			android:textSize="20sp" android:layout_height="wrap_content"
+			android:textColor="@android:color/background_light"
+			android:layout_gravity="center" android:layout_below="@id/ScrollViewSecciones"
+			android:text="@string/mainSinElementos" />
+		<ListView android:id="@+id/rssListView" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" />
+	</LinearLayout>
+
+</RelativeLayout>

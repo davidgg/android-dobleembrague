@@ -1,0 +1,44 @@
+<resources>
+	<string-array name="listArrayCategorias">
+		<item>Last</item>
+		<item>Cars</item>
+		<item>Classic</item>
+		<item>Competition</item>
+		<item>Games</item>
+		<item>Bikes</item>
+		<item>Others</item>
+		<item>Technical</item>
+	</string-array>
+
+	<string-array name="listValuesCategorias">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+		<item>6</item>
+		<item>7</item>
+	</string-array>
+
+	<!-- Frecuencia actualizacion widget -->
+	<string-array name="listArrayFrecuencia">
+		<item>15 minutes</item>
+		<item>30 minutes</item>
+		<item>1 hour</item>
+		<item>3 hours</item>
+		<item>6 hours</item>
+		<item>12 hours</item>
+		<item>24 hours</item>
+	</string-array>
+
+	<string-array name="listValuesFrecuencia">
+		<item>900000</item>
+		<item>1800000</item>
+		<item>3600000</item>
+		<item>10800000</item>
+		<item>21600000</item>
+		<item>43200000</item>
+		<item>86400000</item>
+	</string-array>
+</resources>
